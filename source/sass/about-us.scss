@@ -1,0 +1,173 @@
+.about-us {
+  position: relative;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-us__caption {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.social {
+  position: absolute;
+  top: 50px;
+  right: 54px;
+}
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.social__item {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.social__item-svg:hover {
+  border-radius: 18px;
+  box-shadow: 0 5px 20px -5px #f50049;
+}
+.about-confectioner__subtitle {
+  font-family: "Intro Script R H2 Base";
+  font-size: 22px;
+}
+.about-confectioner__caption {
+  font-size: 14px;
+  font-weight: bold;
+}
+.about-confectioner__text {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+.about-us__begin-quote {
+  font-size: 60px;
+  margin: 0;
+  padding: 0;
+  margin-top: 36px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  color: #ffffff;
+}
+.about-us__quote {
+  font-size: 13px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 22px;
+}
+.about-us__signature {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 49px;
+}
+@media (min-width: 768px) {
+  .about-us {
+    position: relative;
+
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 27px;
+    padding-right: 27px;
+
+    box-sizing: border-box;
+  }
+  .about-us__caption {
+    margin: 0;
+    margin-bottom: 10px;
+
+    text-align: left;
+    font-size: 28px;
+  }
+  .about-confectioner {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+  }
+  .about-us__picture {
+    position: absolute;
+    top: 0;
+    right: 27px;
+  }
+  .about-confectioner__subtitle {
+    margin: 0;
+
+    font-size: 26px;
+  }
+  .social__list {
+    position: absolute;
+    right: 540px;
+    top: 275px;
+
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+  }
+  .about-us__quote {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 14px;
+  }
+  .about-us__begin-quote {
+    font-style: 77px;
+  }
+}
+@media (min-width: 1366px) {
+  .about-us {
+    position: relative;
+
+    width: 1366px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 74px;
+    padding-right: 74px;
+    padding-bottom: 155px;
+
+    box-sizing: border-box;
+  }
+  .about-us__caption {
+    font-size: 40px;
+  }
+  .about-confectioner__subtitle {
+    font-size: 35px;
+  }
+  .about-confectioner__caption {
+    font-size: 20px;
+  }
+  .about-confectioner__text {
+    width: 560px;
+
+    font-size: 18px;
+    &:last-child {
+      margin-bottom: 80px;
+    }
+  }
+  .about-us__picture {
+    left: 713px;
+  }
+  .about-us__quote {
+    width: 820px;
+
+    font-size: 25px;
+    font-style: italic;
+  }
+  .about-us__begin-quote {
+    font-size: 140px;
+  }
+  .social__list {
+    top: 370px;
+    left: -1240px;
+  }
+}

@@ -1,0 +1,125 @@
+.how-order {
+  width: 320px;
+  min-height: 445px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../img/background-order.png");
+  background-repeat: no-repeat;
+  background-color: #e3353d;
+  background-position: center;
+  color: #ffffff;
+  padding-top: 37px;
+}
+.how-order__caption {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  margin-bottom: 37px;
+}
+.how-order__list {
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.how-order__item {
+  position: relative;
+  padding-left: 66px;
+  padding-right: 30px;
+}
+.how-order__number {
+  position: absolute;
+  font-size: 35px;
+  font-family: "Playfair Display", serif;
+  top: -50px;
+  left: 39px;
+}
+.how-order__item-caption {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.how-order__text {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .how-order {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: url("../img/background-order_tablet.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    color: #ffffff;
+    padding-top: 37px;
+  }
+  .how-order__caption {
+    padding-left: 325px;
+    padding-top: 50px;
+
+    font-size: 28px;
+    text-align: left;
+  }
+  .how-order__list {
+    padding-left: 290px;
+  }
+  .how-order__item {
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .how-order__number {
+    font-size: 36px;
+  }
+}
+@media (min-width: 1366px) {
+  .how-order {
+    width: 1366px;
+    min-height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: url("../img/background-order_desktop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    color: #ffffff;
+    padding-top: 120px;
+  }
+  .how-order__caption {
+    padding-left: 800px;
+
+    font-size: 40px;
+    text-align: left;
+  }
+  .how-order__list {
+    width: 510px;
+    padding-left: 760px;
+  }
+  .how-order__number {
+    top: -100px;
+    left: 39px;
+
+    font-size: 64px;
+  }
+  .how-order__item-caption {
+    padding-left: 20px;
+
+    font-size: 21px;
+  }
+  .how-order__text {
+    padding-left: 20px;
+
+    font-size: 20px;
+  }
+}

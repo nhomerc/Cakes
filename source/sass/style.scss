@@ -1,0 +1,32 @@
+body {
+  min-width: 320px;
+  font-family: "Circe Regular", sans-serif;
+  background-color: #fbebea;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+@font-face {
+  font-family: "Circe-Regular";
+  src: url("../fonts/Circe-Regular.eot");
+}
+@font-face {
+  font-family: "Intro Script R H2 Base";
+  src: url("../fonts/IntroScriptR-H2Base.otf");
+}
+@import "header.scss";
+@import "main-intro.scss";
+@import "type-cake.scss";
+@import "individual-order.scss";
+@import "reviews.scss";
+@import "about-us.scss";
+@import "advantages.scss";
+@import "our-advantages.scss";
+@import "customer-care.scss";
+@import "how-order.scss";
+@import "contacts.scss";
+@import "page-footer.scss";

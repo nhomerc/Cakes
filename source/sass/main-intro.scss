@@ -1,0 +1,205 @@
+.page-main {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.main-intro {
+  background-image: url("../img/foto-cake.png");
+  background-repeat: no-repeat;
+  background-position: center -14%;
+  padding-top: 130px;
+  padding-bottom: 44px;
+}
+.main-intro__caption {
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 22px;
+  font-size: 40px;
+  width: 150px;
+  text-align: center;
+}
+.main-intro__subtitle {
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: "Intro Script R H2 Base";
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+.main-intro__advantages {
+  display: block;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  margin-left: 60px;
+  margin-top: 25px;
+  width: 190px;
+}
+.block-nature {
+  position: relative;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-intro__nature {
+  position: absolute;
+  left: 20px;
+  top: -3px;
+}
+.block-shiping {
+  position: relative;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-intro__shiping {
+  position: absolute;
+  left: 20px;
+  top: 0px;
+}
+.main-intro__button {
+  display: block;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  width: 226px;
+  text-transform: uppercase;
+  margin-top: 42px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: 13px;
+
+  border-radius: 33px/30px;
+  color: white;
+  border: none;
+  background-color: #f50049;
+  transition: 0.3s;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 10px 30px -6px #f50049;
+  }
+}
+@media (min-width: 768px) {
+  .page-main {
+    padding: 0;
+  }
+  .main-intro {
+    margin-left: auto;
+    margin-right: auto;
+    width: 768px;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+    padding-bottom: 300px;
+  }
+  .main-intro__caption {
+    font-size: 60px;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    padding-top: 112px;
+    margin-left: 47px;
+    text-align: left;
+    font-family: "Playfair Display";
+  }
+  .main-intro__subtitle {
+    font-size: 36px;
+    margin-bottom: 54px;
+    margin-left: 47px;
+    text-align: left;
+  }
+  .main-intro__block {
+    display: flex;
+    position: absolute;
+    top: 580px;
+    margin-left: 47px;
+  }
+  .main-intro__advantages {
+    display: inline-block;
+    margin-left: 40px;
+    align-self: center;
+    width: 90px;
+  }
+  .main-intro__advantages--second {
+    display: inline-block;
+    width: 200px;
+    margin-left: 40px;
+    align-self: center;
+    text-align: left;
+  }
+  .main-intro__button {
+    margin-left: 47px;
+  }
+  .main-intro {
+    background-image: url("../img/foto-cake-tablet.png"), url("../img/intro-tablet.png");
+    background-position: 335px 13px, 280px 30px;
+    padding-top: 0;
+  }
+  .main-intro__nature {
+    left: -25px;
+    top: 17px;
+  }
+  .main-intro__shiping {
+    left: -25px;
+    top: 17px;
+  }
+}
+@media (min-width: 1366px) {
+  .main-intro {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1366px;
+    padding: 0;
+    padding-left: 30px;
+    padding-top: 118px;
+    padding-bottom: 540px;
+
+    box-sizing: border-box;
+    background-image: url("../img/foto-cake_desktop.png");
+    background-repeat: no-repeat;
+    background-position: 360px -10px;
+  }
+  .main-intro__caption {
+    width: 330px;
+    padding-top: 0;
+    margin-bottom: 20px;
+
+    font-size: 75px;
+    line-height: 93%;
+  }
+  .main-intro__subtitle {
+    font-size: 41px;
+  }
+  .main-intro__block {
+    position: absolute;
+    top: 645px;
+
+    font-size: 14px;
+  }
+  .main-intro__button {
+    margin-left: 43px;
+    margin-bottom: 0;
+    padding-top: 21px;
+    padding-bottom: 21px;
+
+    font-size: 13px;
+  }
+  .main-intro__nature {
+    left: -5px;
+    top: 7px;
+  }
+  .main-intro__shiping {
+    left: -50px;
+    top: 7px;
+  }
+  .main-intro__advantages {
+    padding-left: 20px;
+  }
+  .main-intro__advantages--second {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,140 @@
+.our-advantages {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+.our-advantages__caption {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+.our-advantages__subtitle {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 14px;
+  font-size: 22px;
+  font-family: "Intro Script R H2 Base";
+  text-align: center;
+}
+.our-advantages__block {
+  background-color: #ffffff;
+  padding-top: 11px;
+  padding-bottom: 16px;
+}
+.paragraph__icon {
+  margin-left: 130px;
+  margin-bottom: 14px;
+}
+.paragraph__icon--second {
+  margin-left: 118px;
+  margin-bottom: 11px;
+}
+.paragraph__caption {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 7px;
+}
+.paragraph__wrapper {
+  margin-bottom: 10px;
+}
+.paragraph__text {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .our-advantages {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+  }
+  .our-advantages__caption {
+    font-size: 28px;
+  }
+  .our-advantages__subtitle {
+    font-size: 26px;
+  }
+  .our-advantages__block {
+    display: flex;
+    flex-direction: column;
+    padding-left: 440px;
+    padding-bottom: 250px;
+    padding-top: 60px;
+    background-color: transparent;
+  }
+  .paragraph {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .paragraph__icon {
+    margin: 0;
+  }
+  .paragraph__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .paragraph__caption {
+    text-align: left;
+  }
+  .paragraph__text {
+    text-align: left;
+  }
+  .paragraph__icon {
+    position: absolute;
+    left: 340px;
+  }
+  .paragraph__icon--second {
+    left: 325px;
+  }
+}
+@media (min-width: 1366px) {
+  .our-advantages {
+    position: relative;
+
+    width: 1366px;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .our-advantages__caption {
+    font-size: 40px;
+  }
+  .our-advantages__subtitle {
+    font-size: 35px;
+    margin-bottom: 80px;
+  }
+  .our-advantages__block {
+    display: flex;
+    flex-direction: column;
+    padding-left: 693px;
+    padding-bottom: 400px;
+    padding-top: 60px;
+    background-color: transparent;
+  }
+  .paragraph__caption, .paragraph__text {
+    font-size: 20px;
+  }
+  .paragraph__icon {
+    left: 610px;
+  }
+  .paragraph__icon--second {
+    left: 595px;
+  }
+}
