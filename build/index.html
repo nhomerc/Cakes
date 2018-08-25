@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cakes</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="page-header">
+    <h2 class="page-header__caption">Cakes</h2>
+    <button type="button" class="page-header__button">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="14px">
+        <path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M1.000,-0.000 L17.000,-0.000 C17.552,-0.000 18.000,0.448 18.000,1.000 C18.000,1.552 17.552,2.000 17.000,2.000 L1.000,2.000 C0.448,2.000 0.000,1.552 0.000,1.000 C0.000,0.448 0.448,-0.000 1.000,-0.000 Z"
+        />
+        <path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M1.000,6.000 L17.000,6.000 C17.552,6.000 18.000,6.448 18.000,7.000 C18.000,7.552 17.552,8.000 17.000,8.000 L1.000,8.000 C0.448,8.000 0.000,7.552 0.000,7.000 C0.000,6.448 0.448,6.000 1.000,6.000 Z"
+        />
+        <path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M1.000,12.000 L17.000,12.000 C17.552,12.000 18.000,12.448 18.000,13.000 C18.000,13.552 17.552,14.000 17.000,14.000 L1.000,14.000 C0.448,14.000 0.000,13.552 0.000,13.000 C0.000,12.448 0.448,12.000 1.000,12.000 Z"
+        />
+      </svg>
+    </button>
+    <nav class="main-nav">
+      <ul class="main-nav__list show">
+        <li class="main-nav__item">
+          <a class="main-nav__link">Наши торты</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Индивидуальный заказ</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Отзывы</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">О нас</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Как заказать</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <p class="page-header__phone hidden">+7 906 899 92 96</p>
+  </header>
+
+  <main class="page-main" aria-label="Торты ручной работы на заказ">
+    <section class="main-intro">
+      <h2 class="main-intro__caption">Торты на заказ</h2>
+      <h3 class="main-intro__subtitle">Ручная работа</h3>
+      <div class="main-intro__block">
+        <div class="block-nature">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/natura-icon_desktop.png">
+            <source media="(min-width: 768px)" srcset="img/natura-icon_tablet.png">
+            <img class="main-intro__nature" src="img/natura-icon.png" alt="Натуральные ингредиенты">
+          </picture>
+
+          <p class="main-intro__advantages">Натуральные ингридиенты</p>
+        </div>
+        <div class="block-shiping">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/delivery-icon_desktop.png">
+            <source media="(min-width: 768px)" srcset="img/delivery-icon_tablet.png">
+            <img class="main-intro__shiping " src="img/delivery-icon.png" alt="Доставка">
+          </picture>
+
+          <p class="main-intro__advantages main-intro__advantages--second">Доставка бесплатно при заказе от 2000 рублей</p>
+        </div>
+      </div>
+      <button type="button" class="main-intro__button button">Выбрать торт</button>
+    </section>
+    <section class="type-cake">
+      <h2 class="type-cake__caption">Наши торты</h2>
+      <div class="type-cake__list">
+        <div class="type-cake__item type-cake__item--big">
+          <a class="type-cake__global-link">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/classic-cake_desktop.png">
+              <source media="(min-width: 768px)" srcset="img/classic-cake_tablet.png">
+              <img class="type-cake__picture" src="img/classic-cake.png" alt="Классические торты">
+            </picture>
+          </a>
+          <div class="type-cake__chapter">
+            <h3 class="type-cake__subtitle">Классические</h3>
+            <p class="type-cake__number-species">24 вида</p>
+            <span class="type-cake__show hidden">Смотреть</span>
+            <a class="type-cake__link" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="12" viewBox="0 0 17 12">
+                <image fill="#ffffff" width="17" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAMCAQAAAAuLJ40AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBx0ADi+yWVOsAAAAeElEQVQY04XRIQ7CQBAF0NdNFQnH4BTcAIHqFdCo0rUITAXcg6wgCC7Tc6BBbHAd+tVM/jOTaXozOUpudRy1c8LkYeVSl3ny0inWckx46hTkmFR0R24dbEM2GU7v5GMhTR93e8V1zOk/kElLICI7xbmC6OiN4fcAvti+GT74zZJPAAAAAElFTkSuQmCC"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="type-cake__wrapper">
+          <div class="type-cake__item type-cake__item--small">
+            <a class="type-cake__global-link">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/mousseous-cake_desktop.png">
+                <source media="(min-width: 768px)" srcset="img/mousseous-cake_tablet.png">
+                <img class="type-cake__picture" src="img/mousseous-cake.png" alt="Муссовые торты">
+              </picture>
+            </a>
+            <div class="type-cake__chapter">
+              <h3 class="type-cake__subtitle">Муссовые</h3>
+              <p class="type-cake__number-species">12 видов</p>
+              <a class="type-cake__link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="12" viewBox="0 0 17 12">
+                  <image fill="#ffffff" width="17" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAMCAQAAAAuLJ40AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBx0ADi+yWVOsAAAAeElEQVQY04XRIQ7CQBAF0NdNFQnH4BTcAIHqFdCo0rUITAXcg6wgCC7Tc6BBbHAd+tVM/jOTaXozOUpudRy1c8LkYeVSl3ny0inWckx46hTkmFR0R24dbEM2GU7v5GMhTR93e8V1zOk/kElLICI7xbmC6OiN4fcAvti+GT74zZJPAAAAAElFTkSuQmCC"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="type-cake__item type-cake__item--small">
+            <a class="type-cake__global-link">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/wedding-cake_desktop.png">
+                <source media="(min-width: 768px)" srcset="img/wedding-cake_tablet.png">
+                <img class="type-cake__picture" src="img/wedding-cake.png" alt="Свадебные торты">
+              </picture>
+            </a>
+            <div class="type-cake__chapter">
+              <h3 class="type-cake__subtitle">Свадебные</h3>
+              <p class="type-cake__number-species">20 видов</p>
+              <a class="type-cake__link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="12" viewBox="0 0 17 12">
+                  <image fill="#ffffff" width="17" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAMCAQAAAAuLJ40AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBx0ADi+yWVOsAAAAeElEQVQY04XRIQ7CQBAF0NdNFQnH4BTcAIHqFdCo0rUITAXcg6wgCC7Tc6BBbHAd+tVM/jOTaXozOUpudRy1c8LkYeVSl3ny0inWckx46hTkmFR0R24dbEM2GU7v5GMhTR93e8V1zOk/kElLICI7xbmC6OiN4fcAvti+GT74zZJPAAAAAElFTkSuQmCC"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="type-cake__wrapper">
+          <div class="type-cake__item type-cake__item--small">
+            <a class="type-cake__global-link">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/man-cake_desktop.png">
+                <source media="(min-width: 768px)" srcset="img/man-cake_tablet.png">
+                <img class="type-cake__pictur" src="img/man-cake.png" alt="Торты мужчинам">
+              </picture>
+            </a>
+            <div class="type-cake__chapter">
+              <h3 class="type-cake__subtitle">Мужчинам</h3>
+              <p class="type-cake__number-species">12 видов</p>
+              <a class="type-cake__link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="12" viewBox="0 0 17 12">
+                  <image fill="#ffffff" width="17" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAMCAQAAAAuLJ40AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBx0ADi+yWVOsAAAAeElEQVQY04XRIQ7CQBAF0NdNFQnH4BTcAIHqFdCo0rUITAXcg6wgCC7Tc6BBbHAd+tVM/jOTaXozOUpudRy1c8LkYeVSl3ny0inWckx46hTkmFR0R24dbEM2GU7v5GMhTR93e8V1zOk/kElLICI7xbmC6OiN4fcAvti+GT74zZJPAAAAAElFTkSuQmCC"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="type-cake__item type-cake__item--small">
+            <a class="type-cake__global-link">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/woman-cake_desktop.png">
+                <source media="(min-width: 768px)" srcset="img/woman-cake_tablet.png">
+                <img class="type-cake__picture" src="img/woman-cake.png" alt="Торты женщинам">
+              </picture>
+            </a>
+            <div class="type-cake__chapter">
+              <h3 class="type-cake__subtitle">Женщинам</h3>
+              <p class="type-cake__number-species">16 видов</p>
+              <a class="type-cake__link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="12" viewBox="0 0 17 12">
+                  <image fill="#ffffff" width="17" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAMCAQAAAAuLJ40AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBx0ADi+yWVOsAAAAeElEQVQY04XRIQ7CQBAF0NdNFQnH4BTcAIHqFdCo0rUITAXcg6wgCC7Tc6BBbHAd+tVM/jOTaXozOUpudRy1c8LkYeVSl3ny0inWckx46hTkmFR0R24dbEM2GU7v5GMhTR93e8V1zOk/kElLICI7xbmC6OiN4fcAvti+GT74zZJPAAAAAElFTkSuQmCC"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="type-cake__item type-cake__item--big">
+          <a class="type-cake__global-link">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/kid-cake_desktop.png">
+              <source media="(min-width: 768px)" srcset="img/kid-cake_tablet.png">
+              <img class="type-cake__picture" src="img/kid-cake.png" alt="Детские торты">
+            </picture>
+          </a>
+          <div class="type-cake__chapter">
+            <h3 class="type-cake__subtitle">Детские</h3>
+            <p class="type-cake__number-species">18 видов</p>
+            <a class="type-cake__link" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="12" viewBox="0 0 17 12">
+                <image fill="#ffffff" width="17" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAMCAQAAAAuLJ40AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBx0ADi+yWVOsAAAAeElEQVQY04XRIQ7CQBAF0NdNFQnH4BTcAIHqFdCo0rUITAXcg6wgCC7Tc6BBbHAd+tVM/jOTaXozOUpudRy1c8LkYeVSl3ny0inWckx46hTkmFR0R24dbEM2GU7v5GMhTR93e8V1zOk/kElLICI7xbmC6OiN4fcAvti+GT74zZJPAAAAAElFTkSuQmCC"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="individual-order">
+      <h2 class="individual-order__caption">Индивидуальный заказ</h2>
+      <h3 class="individual-order__subtitle">Собери торт в 3 шага</h3>
+      <div class="filling">
+        <div class="filling__text">
+          <p class="individual-order__number">01</p>
+          <p class="individual-order__step-name">Выберите начинку</p>
+        </div>
+        <ul class="filling__list">
+          <li class="filling__item">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/filling-chocolate_desktop.png">
+              <source media="(min-width: 768px)" srcset="img/filling-chocolate_tablet.png">
+              <img class="filling__image" src="img/filling-chocolate.png" alt="торт">
+            </picture>
+            <div class="filling__text-wrapper">
+              <p class="filling__name">Шоколадный ганаш</p>
+              <p class="filling__description">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
+              <p class="filling__cost">1000 руб/кг</p>
+            </div>
+          </li>
+        </ul>
+        <button class="filling__prev" type="button">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/arrow-left_desktop.png">
+            <img class="reviews__arrow reviews__arrow--prev" src="img/arrow-left_tablet.png" alt="Предыдущая начинка">
+          </picture>
+        </button>
+        <button class="filling__next" type="button">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/arrow-right_desktop.png">
+            <img class="reviews__arrow reviews__arrow--next" src="img/arrow-right_tablet.png" alt="Следующая начинка">
+          </picture>
+        </button>
+        <p class="filling__toggles">
+          <button class="slider__toggle" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8px" height="8px">
+              <path fill-rule="evenodd" fill="rgb(245, 0, 73)" d="M4.000,-0.000 C6.209,-0.000 8.000,1.791 8.000,4.000 C8.000,6.209 6.209,8.000 4.000,8.000 C1.791,8.000 0.000,6.209 0.000,4.000 C0.000,1.791 1.791,-0.000 4.000,-0.000 Z"
+              />
+            </svg>
+          </button>
+          <button class="slider__toggle" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6px" height="6px">
+              <path fill-rule="evenodd" fill="rgb(221, 221, 221)" d="M3.000,-0.000 C4.657,-0.000 6.000,1.343 6.000,3.000 C6.000,4.657 4.657,6.000 3.000,6.000 C1.343,6.000 -0.000,4.657 -0.000,3.000 C-0.000,1.343 1.343,-0.000 3.000,-0.000 Z"
+              />
+            </svg>
+          </button>
+          <button class="slider__toggle" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6px" height="6px">
+              <path fill-rule="evenodd" fill="rgb(221, 221, 221)" d="M3.000,-0.000 C4.657,-0.000 6.000,1.343 6.000,3.000 C6.000,4.657 4.657,6.000 3.000,6.000 C1.343,6.000 -0.000,4.657 -0.000,3.000 C-0.000,1.343 1.343,-0.000 3.000,-0.000 Z"
+              />
+            </svg>
+          </button>
+          <button class="slider__toggle" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6px" height="6px">
+              <path fill-rule="evenodd" fill="rgb(221, 221, 221)" d="M3.000,-0.000 C4.657,-0.000 6.000,1.343 6.000,3.000 C6.000,4.657 4.657,6.000 3.000,6.000 C1.343,6.000 -0.000,4.657 -0.000,3.000 C-0.000,1.343 1.343,-0.000 3.000,-0.000 Z"
+              />
+            </svg>
+          </button>
+          <button class="slider__toggle" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="4px" height="4px">
+              <path fill-rule="evenodd" fill="rgb(221, 221, 221)" d="M2.000,-0.000 C3.105,-0.000 4.000,0.895 4.000,2.000 C4.000,3.104 3.105,4.000 2.000,4.000 C0.895,4.000 -0.000,3.104 -0.000,2.000 C-0.000,0.895 0.895,-0.000 2.000,-0.000 Z"
+              />
+            </svg>
+          </button>
+        </p>
+        <p class="filling__quantity">1/12</p>
+        <button type="button" class="filling__button button">Выбрать</button>
+      </div>
+      <div class="size">
+        <div class="size__text">
+          <p class="individual-order__number">02</p>
+          <p class="individual-order__step-name">Размер</p>
+        </div>
+        <ul class="size__list">
+          <li class="size__item">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/circle1_desktop.png">
+              <source media="(min-width: 768px)" srcset="img/circle1_tablet.png">
+              <img class="size__image" src="img/circle1_mobile.svg" alt="торт">
+            </picture>
+            <p class="size__weight">1 кг</p>
+            <p class="size__diameter">17-18 см</p>
+            <p class="size__quantity-persons">(1 кг - 6 персон)</p>
+          </li>
+          <li class="size__item hidden">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/circle2_desktop.png">
+              <img class="size__image" src="img/circle2_tablet.png" alt="Торт на 10-12 персон">
+            </picture>
+            <p class="size__diameter">23-24 см</p>
+            <p class="size__quantity-persons">(10 - 12 персон)</p>
+          </li>
+          <li class="size__item hidden">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/circle3_desktop.png">
+              <img class="size__image" src="img/circle3_tablet.png" alt="Двухъярусный торт">
+            </picture>
+            <p class="size__diameter">Два яруса 25 и 20 см</p>
+            <p class="size__quantity-persons">(15 - 20 персон)</p>
+          </li>
+          <li class="size__item hidden">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/circle4_desktop.png">
+              <img class="size__image" src="img/circle4_tablet.png" alt="Трёхъярусный торт">
+            </picture>
+            <p class="size__diameter">Три яруса 30,25 и 18 см</p>
+            <p class="size__quantity-persons">(25 - 30 персон)</p>
+          </li>
+        </ul>
+        <button type="button" class="size__button button">Выбрать</button>
+        <p class="size__toggles">
+          <button class="slider__toggle" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8px" height="8px">
+              <path fill-rule="evenodd" fill="rgb(245, 0, 73)" d="M4.000,-0.000 C6.209,-0.000 8.000,1.791 8.000,4.000 C8.000,6.209 6.209,8.000 4.000,8.000 C1.791,8.000 0.000,6.209 0.000,4.000 C0.000,1.791 1.791,-0.000 4.000,-0.000 Z"
+              />
+            </svg>
+          </button>
+          <button class="slider__toggle" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6px" height="6px">
+              <path fill-rule="evenodd" fill="rgb(221, 221, 221)" d="M3.000,-0.000 C4.657,-0.000 6.000,1.343 6.000,3.000 C6.000,4.657 4.657,6.000 3.000,6.000 C1.343,6.000 -0.000,4.657 -0.000,3.000 C-0.000,1.343 1.343,-0.000 3.000,-0.000 Z"
+              />
+            </svg>
+          </button>
+          <button class="slider__toggle" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6px" height="6px">
+              <path fill-rule="evenodd" fill="rgb(221, 221, 221)" d="M3.000,-0.000 C4.657,-0.000 6.000,1.343 6.000,3.000 C6.000,4.657 4.657,6.000 3.000,6.000 C1.343,6.000 -0.000,4.657 -0.000,3.000 C-0.000,1.343 1.343,-0.000 3.000,-0.000 Z"
+              />
+            </svg>
+          </button>
+          <button class="slider__toggle" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6px" height="6px">
+              <path fill-rule="evenodd" fill="rgb(221, 221, 221)" d="M3.000,-0.000 C4.657,-0.000 6.000,1.343 6.000,3.000 C6.000,4.657 4.657,6.000 3.000,6.000 C1.343,6.000 -0.000,4.657 -0.000,3.000 C-0.000,1.343 1.343,-0.000 3.000,-0.000 Z"
+              />
+            </svg>
+          </button>
+        </p>
+      </div>
+      <article class="individual-order__wrapper">
+        <div class="decor">
+          <div class="decor__text">
+            <p class="individual-order__number">03</p>
+            <p class="individual-order__step-name">Оформление</p>
+          </div>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/illustration_desktop.png">
+            <img class="decor__picture hidden" src="img/illustration_tablet.png" alt="Оформление">
+          </picture>
+
+          <ul class="decor__list">
+            <li class="decor__item hidden">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/berry-cake_desktop.png">
+                <img class="decor__image" src="img/berry-cake_tablet.png" alt="Ягодное ассорти">
+              </picture>
+              <p class="decor__name">Ягодное ассорти</p>
+              <p class="decor__cost">700 руб/кг</p>
+            </li>
+            <li class="decor__item">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/marshmallow_desktop.png">
+                <img class="decor__image" src="img/marshmallow_tablet.png" alt="Маршмэллоу">
+              </picture>
+              <p class="decor__name">Маршмэллоу</p>
+              <p class="decor__cost">600 руб/кг</p>
+            </li>
+          </ul>
+          <p class="decor__toggles slider__toggles">
+            <button class="slider__toggle" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8px" height="8px">
+                <path fill-rule="evenodd" fill="rgb(245, 0, 73)" d="M4.000,-0.000 C6.209,-0.000 8.000,1.791 8.000,4.000 C8.000,6.209 6.209,8.000 4.000,8.000 C1.791,8.000 0.000,6.209 0.000,4.000 C0.000,1.791 1.791,-0.000 4.000,-0.000 Z"
+                />
+              </svg>
+            </button>
+            <button class="slider__toggle" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6px" height="6px">
+                <path fill-rule="evenodd" fill="rgb(221, 221, 221)" d="M3.000,-0.000 C4.657,-0.000 6.000,1.343 6.000,3.000 C6.000,4.657 4.657,6.000 3.000,6.000 C1.343,6.000 -0.000,4.657 -0.000,3.000 C-0.000,1.343 1.343,-0.000 3.000,-0.000 Z"
+                />
+              </svg>
+            </button>
+            <button class="slider__toggle" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6px" height="6px">
+                <path fill-rule="evenodd" fill="rgb(221, 221, 221)" d="M3.000,-0.000 C4.657,-0.000 6.000,1.343 6.000,3.000 C6.000,4.657 4.657,6.000 3.000,6.000 C1.343,6.000 -0.000,4.657 -0.000,3.000 C-0.000,1.343 1.343,-0.000 3.000,-0.000 Z"
+                />
+              </svg>
+            </button>
+            <button class="slider__toggle" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6px" height="6px">
+                <path fill-rule="evenodd" fill="rgb(221, 221, 221)" d="M3.000,-0.000 C4.657,-0.000 6.000,1.343 6.000,3.000 C6.000,4.657 4.657,6.000 3.000,6.000 C1.343,6.000 -0.000,4.657 -0.000,3.000 C-0.000,1.343 1.343,-0.000 3.000,-0.000 Z"
+                />
+              </svg>
+            </button>
+            <button class="slider__toggle" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="4px" height="4px">
+                <path fill-rule="evenodd" fill="rgb(221, 221, 221)" d="M2.000,-0.000 C3.105,-0.000 4.000,0.895 4.000,2.000 C4.000,3.104 3.105,4.000 2.000,4.000 C0.895,4.000 -0.000,3.104 -0.000,2.000 C-0.000,0.895 0.895,-0.000 2.000,-0.000 Z"
+                />
+              </svg>
+            </button>
+          </p>
+          <p class="decor__quantity">1/35</p>
+          <p class="decor__quantity hidden">2/35</p>
+          <button type="button" class="decor__button button">Выбрать</button>
+          <button class="decor__next hidden" type="button">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/arrow-right_desktop.png">
+              <img class="reviews__arrow reviews__arrow--next" src="img/arrow-right.svg" alt="Следующая начинка">
+            </picture>
+          </button>
+          <button class="decor__prev hidden" type="button">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/arrow-left_desktop.png">
+              <img class="reviews__arrow reviews__arrow--prev" src="img/arrow-left.svg" alt="Предыдущая начинка">
+            </picture>
+          </button>
+        </div>
+
+        <div class="your-choice">
+          <h2 class="your-choice__caption">Ваш выбор</h2>
+          <div class="your-choice__wrapper">
+            <label class="your-choice__subtitle">Начинка
+              <input type="text" name="filling-input" class="your-choice__input your-choice__input--first" value="Шоколадный ганаш">
+            </label>
+            <label class="your-choice__subtitle">Размер
+              <input type="text" name="size-input" class="your-choice__input your-choice__input--second" value="1 кг">
+            </label>
+            <label class="your-choice__subtitle">Оформление
+              <input type="text" name="decor-input" class="your-choice__input your-choice__input--third" value="Маршмэллоу">
+            </label>
+          </div>
+          <button type="button" class="your-choice__button button">Заказать торт</button>
+        </div>
+      </article>
+    </section>
+
+    <section class="reviews">
+      <h2 class="reviews__caption">Отзывы</h2>
+      <blockquote class="reviews__item">
+        <p class="reviews__author-picture">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/review-foto_desktop.png">
+            <source media="(min-width: 768px)" srcset="img/review-foto_tablet.png">
+            <img class="reviews__author-image" src="img/review-foto.png" alt="Фото Марии">
+          </picture>
+        </p>
+        <div class="reviews__wrapper">
+          <cite class="reviews__author-name">Мария</cite>
+          <p class="reviews__about-author">юрист, 33 года</p>
+          <p class="reviews__text">Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь
+            будем заказывать торты только у вас для наших семейных праздников:)
+            <button type="button" class="reviews__button">Развернуть</button>
+          </p>
+        </div>
+      </blockquote>
+      <button class="reviews__prev" type="button">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/arrow-left_desktop.png">
+          <img class="reviews__arrow reviews__arrow--next" src="img/arrow-left.svg" alt="Предыдущая начинка">
+        </picture>
+      </button>
+      <button class="reviews__next" type="button">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/arrow-right_desktop.png">
+          <img class="reviews__arrow reviews__arrow--next" src="img/arrow-right.svg" alt="Следующая начинка">
+        </picture>
+      </button>
+      <p class="reviews__quantity">1/26</p>
+      <p class="reviews__toggles">
+        <button class="slider__toggle" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8px" height="8px">
+            <path fill-rule="evenodd" fill="rgb(245, 0, 73)" d="M4.000,-0.000 C6.209,-0.000 8.000,1.791 8.000,4.000 C8.000,6.209 6.209,8.000 4.000,8.000 C1.791,8.000 0.000,6.209 0.000,4.000 C0.000,1.791 1.791,-0.000 4.000,-0.000 Z"
+            />
+          </svg>
+        </button>
+        <button class="slider__toggle" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6px" height="6px">
+            <path fill-rule="evenodd" fill="rgb(221, 221, 221)" d="M3.000,-0.000 C4.657,-0.000 6.000,1.343 6.000,3.000 C6.000,4.657 4.657,6.000 3.000,6.000 C1.343,6.000 -0.000,4.657 -0.000,3.000 C-0.000,1.343 1.343,-0.000 3.000,-0.000 Z"
+            />
+          </svg>
+        </button>
+        <button class="slider__toggle" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6px" height="6px">
+            <path fill-rule="evenodd" fill="rgb(221, 221, 221)" d="M3.000,-0.000 C4.657,-0.000 6.000,1.343 6.000,3.000 C6.000,4.657 4.657,6.000 3.000,6.000 C1.343,6.000 -0.000,4.657 -0.000,3.000 C-0.000,1.343 1.343,-0.000 3.000,-0.000 Z"
+            />
+          </svg>
+        </button>
+        <button class="slider__toggle" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6px" height="6px">
+            <path fill-rule="evenodd" fill="rgb(221, 221, 221)" d="M3.000,-0.000 C4.657,-0.000 6.000,1.343 6.000,3.000 C6.000,4.657 4.657,6.000 3.000,6.000 C1.343,6.000 -0.000,4.657 -0.000,3.000 C-0.000,1.343 1.343,-0.000 3.000,-0.000 Z"
+            />
+          </svg>
+        </button>
+        <button class="slider__toggle" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="4px" height="4px">
+            <path fill-rule="evenodd" fill="rgb(221, 221, 221)" d="M2.000,-0.000 C3.105,-0.000 4.000,0.895 4.000,2.000 C4.000,3.104 3.105,4.000 2.000,4.000 C0.895,4.000 -0.000,3.104 -0.000,2.000 C-0.000,0.895 0.895,-0.000 2.000,-0.000 Z"
+            />
+          </svg>
+        </button>
+      </p>
+    </section>
+
+    <section class="about-us">
+      <h2 class="about-us__caption">О нас</h2>
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/confectioner-foto_desktop.png">
+        <source media="(min-width: 768px)" srcset="img/confectioner-foto_tablet.png">
+        <img class="about-us__picture" src="img/confectioner-foto.png">
+      </picture>
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social-link instagram">
+              <svg class="social__item-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36px"
+                height="36px">
+                <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M17.844,0.000 C27.699,0.000 35.688,8.059 35.688,18.000 C35.688,27.941 27.699,36.000 17.844,36.000 C7.989,36.000 0.000,27.941 0.000,18.000 C0.000,8.059 7.989,0.000 17.844,0.000 Z"
+                />
+                <image x="9px" y="9px" width="18px" height="18px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAMAAABhEH5lAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABgFBMVEX1AEn////1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn///+zvundAAAAf3RSTlMAAAhWstnk4Nq0Wglo3Oaxm5yamafd325lLhoVEA8bFyNfXuknKAFNLLwrB8JFH4VRHqHlGWbr88rI8nMMEpLj4V0k2O5Hlp4UWVLxoBGXxyLALwqVDsQhvsswnQ2fVO+l1tJXC23wwe11k96wKaJVqLnoYlwWJdXnZOKqlLtj2C3edgAAAAFiS0dEAf8CLd4AAAAHdElNRQfiBxcUFwD2GiwlAAABOUlEQVQY0yWQ51eCcBiFX0egoIUUViKJpdGw0oaaI7BhpiYpmFaWDc3Shg3b9bfLj+6Xe87z4Tn3XACjyTyA4Xowi5UgDWC02QeHKMpB0w5qeIRxjpJgcjJj4y4X6+bYCQ/vtWOTYJ2ygRbS5ydhWpjx4rPAmOcA5gU6EKAXFpeCoWUcVuhVINfCkeh6LBznE8kNESSHC4SwPbXJE1vbO+BJ4yDtZhJUZA/5srm8e7+gIYrzBeQDhELFaElRESr7D+WKjqpHxzo6ydROY2cICfXzJIdcmj5YvzBVKtnL3BWw6v+IRrN+3Sre5G5rkGmL0Lm7B1CyeVl+eEwA8F0cnp5fkKdcKnGoCawFr6Il5ev13IrC9dg34v3jE8im9PX9ky6oalptd3ExrmgfeH8ZUUIPSmKn+tcw9AELIzmOBesdGwAAAABJRU5ErkJggg=="
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social-link vk">
+              <svg class="social__item-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36px"
+                height="36px">
+                <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M18.156,-0.000 C28.011,-0.000 36.000,8.059 36.000,18.000 C36.000,27.941 28.011,36.000 18.156,36.000 C8.301,36.000 0.313,27.941 0.313,18.000 C0.313,8.059 8.301,-0.000 18.156,-0.000 Z"
+                />
+                <image x="4px" y="9px" width="25px" height="17px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAARCAMAAAAfZPc8AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABrVBMVEX1AEn////1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn///+fs9kqAAAAjXRSTlMAAAECGlpxc285NmFHChBVdHJgJAZ19fPo/NIzV9n28Ad88unq95cDkytij+TeUEjNzyXduDwuqtC/pOJt4B4EqAj061P+cEDvieYxDK3CPdO5E0zupQvKhCgJo9c/LdjbWPmS4ZUNW9ROEbPlRp5RLzA+rCffF6d3BTWgfpBsO8ZFtbSZqZ/MXBh9yELGIAAPAAAAAWJLR0QB/wIt3gAAAAd0SU1FB+IHFxQXJMoZyPQAAAE5SURBVBjTY2BgYGJABowwwMDAjFMGVQJJBk0CRYaFlY2dg5OBiYubg4OHl5GRj19AUFBImIFBRFRMXEJSSlpGVk5eXkKUWUFRSUlZRVWNgUFdsFdDU0tFW0hHV0/fwFDByNjE1ExP2RxosrCFJS+DlbWRja2dvYOFI4cTPyOjgLMLUIaJzdWNwd3D08bL28fXzz8gMIgxOCQ0DOQcu3BZYYaIEAmvyKho8YCYWMa4+ARNRrBLE5OS1Xm1U1LT1NOtMzIZs7JzchkhMmF5YvkMUQVBQIcWGjEyFskVq0NlGEoSSr0RPi0rd6qohMow8HhkVIFoo+ryQkZGlmjXGkdYoOip6HAAvV3TK6crxMzIWCtfBw+v+kDxDPNo54bGJrnmFu3i3lZEUGa5tPm1+3Uwdnb5hXc3mPcAANq2ORQRYGVWAAAAAElFTkSuQmCC"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social-link twitter">
+              <svg class="social__item-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36px"
+                height="36px">
+                <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M18.156,0.000 C28.011,0.000 36.000,8.059 36.000,18.000 C36.000,27.941 28.011,36.000 18.156,36.000 C8.301,36.000 0.313,27.941 0.313,18.000 C0.313,8.059 8.301,0.000 18.156,0.000 Z"
+                />
+                <image x="9px" y="9px" width="19" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAQCAMAAADDGrRQAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABXFBMVEX1AEn////1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEkAAABqxKilAAAAcnRSTlMAACYXV83r5sErJ7FbAd0fcPPIe43Z8fea+OPhQAnktgyc8P7pPfY10KQUUfUcGfqCEe5+BZXsvs8DG/Qe7+UTjNLWBjAp+2MKB6Om04mh161UNrw+1eq5SS8ER3kLtfJr23Nu3Gron39viN/CKA997S5u8VSQAAAAAWJLR0RzQQk9zgAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IHFxQdL6ck+fYAAADwSURBVBjTTczXWsJAFATgWZSYgImAQCToqhALGhQLEcVQLAj2jgWxYQcL738hu/lA5/KfcwZwdMFOt1PoESWXuxeyovRx8nh9/f5AUG0OQApp4cEWDdFhGRgZjUR1jI1PTAZjU5g24ux6RphNYG5+YTGpm0spYZnZSjpJsGplXMjmxPzaOrMNdZNAKtAE/rIVKRKU6PY/ws4uIcCedz/bIfngkBm0Zr5jR8YxtxPztE2lMx/hFlfOyxf2p9u6tO3q2lIrjG6qt3dgRjVBvX9g1WPNfAK3ynOo9vL69l79MOoN2IbPLzGgf1Nn7IdvtuwXPwkgtXlYnPsAAAAASUVORK5CYII="
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="about-confectioner">
+        <h3 class="about-confectioner__subtitle">О кондитере</h3>
+        <p class="about-confectioner__caption">Кондитер - как призвание</p>
+        <p class="about-confectioner__text">Павел — профессиональный повар в различных гастрономических областях, но однажды его сердце покорило кондитерское
+          искусство.
+        </p>
+        <p class="about-confectioner__text">С ранних лет он увлекался утонченным мастерством и обратился к своим талантам как кондитер.</p>
+        <p class="about-confectioner__caption">Принцип - натуральные ингридиенты</p>
+        <p class="about-confectioner__text">Сегодня Павел радует изделиями не только близких, но и тех, кто предпочитает качественную продукцию для торжества,
+          а главным принципом является выбор натуральных ингредиентов. </p>
+      </div>
+      <p class="about-us__begin-quote">"</p>
+      <p class="about-us__quote">Я за простые рецепты. В Италии это называют cucina povera: когда обычные ингредиенты превращаются в божественное блюдо.
+      </p>
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/signature_desktop.png">
+        <source media="(min-width: 768px)" srcset="img/signature_tablet.png">
+        <img class="about-us__signature" src="img/signature.png" alt="Роспись">
+      </picture>
+    </section>
+
+    <section class="advantages">
+      <article class="our-advantages">
+        <h2 class="our-advantages__caption">Наши преимущества</h2>
+        <h3 class="our-advantages__subtitle">Почему нас выбирают?</h3>
+        <div class="our-advantages__block">
+          <div class="paragraph">
+            <img class="paragraph__icon" src="img/ingredient-icon.png" alt="Без искусственных добавок">
+            <div class="paragraph__wrapper">
+              <p class="paragraph__caption">Без искусственных добавок</p>
+              <p class="paragraph__text">Работаем с натуральными ингредиентами</p>
+              <p class="paragraph__text">и свежими продуктами</p>
+            </div>
+          </div>
+          <div class="paragraph">
+            <img class="paragraph__icon paragraph__icon--second" src="img/cake-icon.png" alt="Свежий торт">
+            <div class="paragraph__wrapper">
+              <p class="paragraph__caption">Свежий торт в день торжества</p>
+              <p class="paragraph__text">Торты изготавливаются в течение</p>
+              <p class="paragraph__text">суток до отправки</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="customer-care">
+        <div class="customer-care__block">
+          <h2 class="customer-care__caption">Забота о клиентах</h2>
+          <h3 class="customer-care__subtitle">Для нас важна</h3>
+          <p class="customer-care__text">Нам важно чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы он был создан исключительно для вас
+            и для вашего события.</p>
+        </div>
+        <img class="customer-care__image hidden" src="#">
+      </article>
+    </section>
+    <section class="how-order">
+      <h2 class="how-order__caption">Как заказать</h2>
+      <ul class="how-order__list">
+        <li class="how-order__item">
+          <p class="how-order__number">1</p>
+          <p class="how-order__item-caption">Срок заказа</p>
+          <p class="how-order__text">Размещать заказы желательно за 2-3 дня. На выходные заказы лучше размещать минимум за неделю.</p>
+        </li>
+        <li class="how-order__item">
+          <p class="how-order__number">2</p>
+          <p class="how-order__item-caption">Доставка по городу</p>
+          <p class="how-order__text">Доставка в пределах города 200 рублей, при заказе на сумму более 2000 доставка бесплатно.</p>
+        </li>
+        <li class="how-order__item">
+          <p class="how-order__number">3</p>
+          <p class="how-order__item-caption">Доставка за городом</p>
+          <p class="how-order__text">Доставка за пределами города рассчитывается индивидуально.</p>
+        </li>
+      </ul>
+      <img class="how-order__image hidden" src="#">
+    </section>
+
+    <section class="contacts">
+      <h2 class="contacts__caption">Контакты</h2>
+      <h3 class="contacts__subtitle">Остались вопросы?</h3>
+      <div class="contacts__wrapper">
+        <div class="contacts__input-block">
+          <p class="contacts__text">Заполните форму ниже и наш кондитер свяжется с Вами</p>
+          <input class="contacts__fio" type="text" name="contacts__name" placeholder="Ваше имя">
+          <input class="contacts__mail" type="email" name="contacts__email" placeholder="Email адрес">
+          <textarea class="contacts__question-area" name="contacts__question" placeholder="Ваш вопрос"></textarea>
+          <button type="submit" class="contacts__button button">Отправить</button>
+        </div>
+        <div class="contacts__communications">
+          <div class="contacts__block">
+            <p class="contacts__text">
+              Или позвоните по телефону:
+            </p>
+            <p class="contacts__text">+7 906 899 92 96</p>
+            <p class="contacts__text">
+              Наша почта: bakerybypavel@mail.ru
+            </p>
+            <p class="contacts__text">
+              Мы в соц.сетях:
+            </p>
+          </div>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <a href="#" class="contacts-link instagram">
+                <svg class="contacts__item-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="62.563"
+                  height="63" viewBox="0 0 62.563 63">
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: #fff;
+                      }
+                    </style>
+                  </defs>
+                  <ellipse id="плашка_инстаграм" data-name="плашка инстаграм" class="cls-1" cx="31.281" cy="31.5" rx="31.281" ry="31.5" />
+                  <image id="инстаграм_иконка" data-name="инстаграм иконка" x="16" y="16" width="32" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABEVBMVEX1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEkAAAAhLuWFAAAAWXRSTlMAFIC+4vL0v2Ld326E/cfEuUmTNUElDzQ2FR/4/kXBzVkBJwOVsAqStnVwp/qyOe8+KNxcqc7zyqYWcTIQmHLr17WhXz/AKvv5YEjs1peUmnmQLO6rOBMC3gCFTp0AAAABYktHRFoDu6WiAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gcYFBIQzrnYUgAAAVNJREFUOMuFk3dbAjEMxnML7hCO5UJBRHCgOHCjKIoD9x683/+LmMIdD/dckPeftsmvaZsmRCxNN0wrEpBlRnWNPNkORMUm+v54gheOmwzIjbExEe/tZ38qTSGlU0xwDI3jZ0hUhk/RSOf9NEIcQycDEOJTdlKdAkTJhCP4pxJQhAOTLLhDjumZ2Zwa5+bzWR5cWBRBcuAuLKgXFxdLTCwpQxKRIaBc8TO0vOKZgsAqu9aq6xs1YLMkAFvA9o6a1HeBPQHYH7y3XsOBABziyL/sMdAIAQ2g4gMnwGkIaAJnPnAOZENAqYUL7+50iXwzfIc2cNWfXQM3wiVvO7i7VzEeHoGClKgqJ+rp+aXIw6uYSXrreKl+L8sAfbRbwOfX98CggOB300/ud2ilvlsuGE+qYEaUXE9ccsb4ov2/7LvamMax1Wxc641u3q7tRxPb3+i3/x/EGVpPH+spggAAAABJRU5ErkJggg=="
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a href="#" class="contacts-link vk">
+                <svg class="contacts__item-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="62.562"
+                  height="63" viewBox="0 0 62.562 63">
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: #fff;
+                      }
+                    </style>
+                  </defs>
+                  <circle id="плашка_вконтакте" data-name="плашка вконтакте" class="cls-1" cx="31.281" cy="31.5" r="31.281" />
+                  <image id="вконтакте_иконка" data-name="вконтакте иконка" x="10.562" y="19" width="42" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAaCAMAAAD2Zz7EAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB71BMVEX1AEn////1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEn1AEkAAAC4VzSRAAAAo3RSTlMAAAYfIBBp3ufo30oCGhti6uzt68MKa/IT3eRC4f6i1/mnpalg3FRQXM0OePz3doIesuOkFip62tOZ4seWBJIJ5sXzwfRqc336RBXp2wE37wgM7jbRimea/fFH+55D8H7PI3IzytIo1JPWLY2M+G/1e8sDzIOFqy4nt70HBayfF6ZGtA9VWCG7WjwS5V45JB2P2faVU3fYhHVbeSWYmywvhsYUooKNYwAAAAFiS0dEpFm+erkAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBxgUFgMua1yIAAACZklEQVQ4y3XT51vTUBQG8BNAGyojo6U0UosglFVHRUFklKFGSy0W0FYEQWUqDlTEhYgo4gYVRXG+/6i5t20aHuH90NyT82vGyXOJMjKzWLYRy3abmM1j38Frysnl3aw8QaB8SVZUVVYkh5OowIVUpEIm89wSayqKpO2kolTPs4vICxTvLjFSqnj2MOow/wqbQcvKfT5fRSWyq6harfHv5Te2Y5/xu1/FAR+PAwE6CKmW9Q4pNYeJCutQz6mb0yOQcgWWnAYcpUzV08ib9Qg0ETXDnqYtQbRyKRT423xE7RBbWNPX4T9GdBxamp7QXSe5PBVCZ5jodESvZs1wGbQuqoBo0jMivMRpO6LdgnG2J3VZl95LZxE06blY/DynBW19FwRG+wf0i7w9CHnoEhpS9HIUV4jRIRm2Lk5pOHnZERmjYyZt1KBmMto0DmVCSND+eN9V3r82WaxjlC87ocN1nRgdm7xxU0hSumWMjx2nbteg7w4/dVeHPs0Wwj3jOcImnVFwny+c09qDh3z16LF9dopTB0JPBJPSnCfylDaPYMO8YKHPgtCcW1BjpgsWSs9dsbkt6AsVyoKF0iLiLzenwpICpdxCX72GOmElb8Rgb5hTbpfSlN5GIb5Ly/cq4J8Pc8psKCtNKX8AoW6z+gB12bPyMUGFTxF4cyy3/DwApTcjWVRi0LnKvldiUF9W/F+tj7cmozj4je8JWkUp1QYQyU/Q8DLqNrzt9/EOxGR7e8n6rArjA8+EEB/+sc7Sg6KNkwmv2ZTkBo3+NOpfWszcsYv/zXHkd6u7QdTKKnhV1ewOaDx//v4DN9mwKzv9C18AAAAASUVORK5CYII="
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <img class="contacts__image hidden" src="#">
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="footer__wrapper">
+      <p class="page-footer__logo">Cakes</p>
+      <ul class="page-footer__list">
+        <li class="page-footer__item">
+          <a class="page-footer__link">Наши торты</a>
+        </li>
+        <li class="page-footer__item">
+          <a class="page-footer__link" href="#">Индивидуальный заказ</a>
+        </li>
+        <li class="page-footer__item">
+          <a class="page-footer__link" href="#">Отзывы</a>
+        </li>
+        <li class="page-footer__item">
+          <a class="page-footer__link" href="#">О нас</a>
+        </li>
+        <li class="page-footer__item">
+          <a class="page-footer__link" href="#">Как заказать</a>
+        </li>
+        <li class="page-footer__item">
+          <a class="page-footer__link" href="#">Контакты</a>
+        </li>
+        <li class="page-footer__item">
+          <p class="page-footer__phone">+7 906 899 92 96</p>
+        </li>
+      </ul>
+    </div>
+    <ul class="page-footer__contacts-list">
+      <li class="page-footer__contacts-item">
+        <a class="page-footer__contacts-link" href="#">
+          <svg class="footer__item-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="23"
+            viewBox="0 0 23 23">
+            <image width="23" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAQAAABKIxwrAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBxgVAQ5Um86UAAABSElEQVQ4y5WUMUoDURRFT4JYqIgRRIOtkCKFBixcgRZaiFb2Vm7ALpkN2NjY6BIiIooLGIvYixgrIQyx0QFJLOdYGHFGkmjeq+7/B/7l8t5HxIJVG8b2r9iGNQsiiGVDVRM7fTtRNbQsWDBUIwNL0rdLBkZqaAGrauTqAPS7V43UGjbUYAg4YVnEQL3D2GSgDcQTtSyWTIzHmKFLk3Sts8MCr1xzQUIdeAaafDCD2sk8fZmKMHQuddfR33hdbXngmvs+qLfmB+NrattiT037oO6m8XzG9RZwTLun3jkCNtNAFp8HHlP6HpgdjLeASkqvAC8ZIuN9WY1d6qmiLXVjWDJnamzgjoe21avhQY57msr93KksnlO6TGX8VdhmkYgbGpnzDpP49sfM/IxxYpzniRx7/F175GiONu/VkbdpxF39309Q/foJPgHHF0QIW9kfsQAAAABJRU5ErkJggg=="
+            />
+          </svg>
+        </a>
+      </li>
+      <li class="page-footer__contacts-item">
+        <a class="page-footer__contacts-link" href="#">
+
+          <svg class="footer__item-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="19"
+            viewBox="0 0 31 19">
+            <image width="31" height="19" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAATCAQAAADCZR7JAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBxgVBSmV/b77AAACP0lEQVQ4y42UOWjUQRjFf/9NFI+gEk8waGEweKAgCIJH4V2k08RC8CqMNiI2IhhBCwURKwULbQTBKF4QD7TVKB4oJubA4BmNxl2SXY1s1OzPYmfXTaLgm2bem++9j5lhJnIs6yglizbqEdjLNkYHTXqopiWw1cwjh/dcwWf+wQ/rxJl2+9N2m2222VbT3hYRD9tbUJ2xoZgS4pzjJxCxnhWUkyLOKPqYA0DEW8YAMIxqUpwiE7pvZDJes9/dIb1WvSrGvG/SGUF94wMRd/jL60HD5X71LlaYsMlIxNG+s8NS8YIZFw2wRzaadGHQim3ym5Ux2miinCoAeqlnKieAOBFlFKKGChp5FNhxZvGIesRlpnweUkt8ZZfzPa1WFnQvsd1uFwRlqXHfOVGy9J5pN4WlXaZ97mUzLglKq0+8qV7Kt2g35UbJ2RfZbYvFYfmuGRN+cUrgL0yYts2SwK+rddl57hxv2e/hMB9vo0nv5M94n12+siKwlaZsccRA+1Q/2mFZYDErwl1kx6RcuXhW3Zxjf0qO+MuGAsu/xha/2+70wfaYT01b+x8B5+3zdTagUJ7lR7tcM6R8pDd84vY8j7xony8dP9COW+3xg6sG2U+qPSbdWxBwzYyPLRrcqdaknz1orEB7aKdVfjJudV4r8oH9Hh26sxo7/WGrB/L30OILcYNxO63K102xw9ZIhqCcM8xjHAmSpJFpNLIY2MN+hvEh/2AnkPibHWAue5jNWIYjveykAYC1HKKUKP8PHfsNJ4Rt5KYCf+AAAAAASUVORK5CYII="
+            />
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <hr class="footer__dash">
+    <p class="page-footer__copyright-text">2018 Cakes</p>
+  </footer>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

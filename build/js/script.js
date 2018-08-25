@@ -1,0 +1,1 @@
+var showHideButton=document.querySelector(".page-header__button"),mainMenu=document.querySelector(".main-nav__list");mainMenu.classList.toggle("show"),showHideButton.addEventListener("click",function(e){e.preventDefault(),mainMenu.classList.toggle("show")});
